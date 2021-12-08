@@ -12,7 +12,7 @@ Head ref associated with PR where deployment happened.
 
 ```yaml
     steps:
-      - uses: uses: rodilo/get-head-ref-from-deployment-status@v1.2
+      - uses: uses: rodilo/get-head-ref-from-deployment-status@v1.3
         id: getHeadRef
       - run: echo $HEAD_REF
         if: success() && steps.getHeadRef.outputs.number
