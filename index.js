@@ -17,7 +17,9 @@ async function run() {
     commit_sha: sha,
   });
 
-  const pr = result[0];
+  console.log("Pull request result", result);
+
+  const pr = result.data[0];
 
   core.setOutput("head_ref", pr.head.ref);
 
