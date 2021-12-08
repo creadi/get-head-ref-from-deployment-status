@@ -1,0 +1,17 @@
+name: Return head ref from commit hash
+description: Find current head ref when using a deployment_status as a workflow trigger
+inputs:
+  github-token:
+    required: false
+    description: The GitHub token used to create an authenticated client.
+    default: ${{ github.token }}
+  sha:
+    required: false
+    description: SHA to get HEAD REF for.
+    default: ${{ github.event.pull_request.head.sha || github.sha }}
+outputs:
+  head_ref:
+    description: "head ref from PR associated with the deployment"
+runs:
+  using: "node12"
+  main: "index.js"

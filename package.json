@@ -1,0 +1,24 @@
+{
+  "name": "get-head-ref-from-deployment-status",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodilo/get-head-ref-from-deployment-status.git"
+  },
+  "keywords": [],
+  "author": "Nenad Krneta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodilo/get-head-ref-from-deployment-status/issues"
+  },
+  "homepage": "https://github.com/rodilo/get-head-ref-from-deployment-status#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  }
+}
